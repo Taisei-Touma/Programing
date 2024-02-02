@@ -13,14 +13,20 @@ Barrier::Barrier() : image(NULL), life_span(1000)
 	}
 }
 
-Barrier::Barrier()
+Barrier::~Barrier()
 {
 	//“Ç‚İ‚ñ‚¾‰æ‘œ‚ğíœ
 	DeleteGraph(image);
 }
 
 //•`‰æˆ—
-void Barrier::IsFinished(float speed)
+void Barrier::Draw(const Vector2D& location)
+{
+	DrawRotaGraphF(location.x, location.y, 1.0, 0.0, image, TRUE);
+}
+
+//õ–½‚ªs‚«‚½‚©
+bool Barrier::IsFinished(float speed)
 {
 	life_span -= speed;
 	return (life_span <= 0);

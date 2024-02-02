@@ -50,7 +50,7 @@ void SceneManager::Initialize()
 void SceneManager::Update()
 {
 	//フレーム開始時間（マイクロ秒）を取得
-	LONGLONG start_time = GetNowHiPerformaceCount();
+	LONGLONG start_time = GetNowHiPerformanceCount();
 
 	//メインループ
 	while(ProcessMessage() != -1)

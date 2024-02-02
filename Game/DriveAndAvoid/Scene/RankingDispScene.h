@@ -13,6 +13,8 @@ private:
 
 public:
 	RankingDispScene();
+	virtual ~RankingDispScene();
+
 	virtual void Initialize() override;
 	virtual eSceneType Update() override;
 	virtual void Draw() const override;
