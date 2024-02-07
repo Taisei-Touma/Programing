@@ -22,7 +22,7 @@ SceneManager::~SceneManager()
 void SceneManager::Initialize()
 {
 	//ウィンドウのタイトルを設定
-	SetMainWindowText("Driv&Avoid");
+	SetMainWindowText("Drive&Avoid");
 
 	//ウィンドウモードで起動
 	if (ChangeWindowMode(TRUE) != DX_CHANGESCREEN_OK)
